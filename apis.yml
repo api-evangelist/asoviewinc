@@ -1,23 +1,54 @@
 aid: asoviewinc
+
 name: Asoviewinc
-description: 'Asoviewinc is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Asoviewinc is a private company listed on EquityZen, a marketplace for pre‑IPO shares. It offers accredited investors the ability to buy and sell shares of early‑stage companies before they go public. Through EquityZen’s platform, Asoviewinc provides valuation data, stock price, management information, and detailed deal documents. The company is part of Morgan Stanley’s network and adheres to regulatory compliance for private securities offerings.'
+
+image: https://dioguwdgf472v.cloudfront.net/assets/equityzen/img/equityzen-logo/equityzen-logo.svg
+
 url: https://raw.githubusercontent.com/api-evangelist/asoviewinc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Finance
+- Marketplace
+- PrivateEquity
+- PreIPO
+- Investment
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/asoviewinc-hosts.yml
+- type: Vendors
+  url: vendors/asoviewinc-vendors.yml
+- type: DomainSecurity
+  url: security/asoviewinc-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/asoviewinc
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
