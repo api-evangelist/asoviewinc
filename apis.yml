@@ -1,14 +1,17 @@
 aid: asoviewinc
 
-name: Asoviewinc
+name: ASOVIEW Inc.
 
-description: 'Asoviewinc is a private company listed on EquityZen, a marketplace for pre‑IPO shares. It offers accredited investors the ability to buy and sell shares of early‑stage companies before they go public. Through EquityZen’s platform, Asoviewinc provides valuation data, stock price, management information, and detailed deal documents. The company is part of Morgan Stanley’s network and adheres to regulatory compliance for private securities offerings.'
-
-image: https://dioguwdgf472v.cloudfront.net/assets/equityzen/img/equityzen-logo/equityzen-logo.svg
+description: >-
+  ASOVIEW Inc. (アソビュー株式会社) is a Tokyo company, founded in 2011, that runs Asoview!, an online
+  booking service for leisure activities, tours, attractions and experiences in Japan. Shares in the
+  private company are offered on the EquityZen secondary market, which is where this record was
+  harvested from; the company itself is not a marketplace for pre-IPO shares.
 
 url: https://raw.githubusercontent.com/api-evangelist/asoviewinc/refs/heads/main/apis.yml
 
 x-type: company
+x-harvest-source-url: https://equityzen.com/company/asoviewinc
 
 x-source: harvest:secondary-market
 
@@ -23,18 +26,20 @@ modified: '2026-09-26'
 
 tags:
 - Company
-- Finance
 - Marketplace
-- Private Equity
-- Pre-IPO
-- Investment
+- Travel
+- Booking
+- Activities
+- Tourism
+- Japan
 tags_raw:
 - Company
-- Finance
 - Marketplace
-- PrivateEquity
-- PreIPO
-- Investment
+- Travel
+- Booking
+- Activities
+- Tourism
+- Japan
 
 maintainers:
 - FN: Kin Lane
@@ -50,7 +55,7 @@ common:
 - type: DomainSecurity
   url: security/asoviewinc-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/asoviewinc
+  url: https://www.asoview.co.jp/
 
 apis: []
 x-enrichment:
@@ -59,3 +64,8 @@ x-enrichment:
   artifacts_added: 3
   pass: modular-v1
   engine: identity=local,contract=local,surfaces=local,docs=local
+x-tags-removed:
+- Pre-IPO
+- Private Equity
+- Finance
+- Investment
